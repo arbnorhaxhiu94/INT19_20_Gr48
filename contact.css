@@ -1,0 +1,287 @@
+#socialmedia{
+	background-image: radial-gradient(circle, #2aa2d4 , #00ff55 );
+	color: white;
+	font-size: 14px;
+}
+#a{
+	padding: 0.25em 0em;
+	float: left;
+}
+#a ul li{
+	margin: 0em;
+	padding: 0em;
+	display: inline-block;
+}
+#a img{
+	background-color: white;
+	width: 1.8em;
+	height: 1.8em;
+	border-radius: 50%;
+	margin: 0em 0.25em;
+}
+#b{
+	text-align: right;
+	padding: 0.5em;
+}
+#b ul li{
+	margin: 0em;
+	padding: 0em;
+	display: inline-block;
+}
+#b a{
+	color: white;
+	text-decoration: none;
+}
+#wireless{
+	transform: rotate(60deg);
+}
+#google:hover{
+	transform: rotate3d(1,1,1, 180deg);
+}
+#plus{
+	margin: 0em 2em 0em 0em;
+	background-color: white;
+}
+#plus p{
+	padding: 0em 0em;
+	margin: 0em;
+	width: 2em;
+	text-align: center;
+	float: right;
+	font-weight: bold;
+	border:none;
+	background-color: #2aa2d4;
+	border-radius: 0em 0em 0.25em 0.25em;
+}
+#plus p button{
+	color: white;
+	background-color: #2aa2d4;
+	padding: 0.5em;
+	margin: 0em;
+	width: 2em;
+	cursor: pointer;
+	border:none;
+	font-size: 100%;
+	border-radius: 0em 0em 0.25em 0.25em;
+}
+header{
+	text-align: left;
+	margin-top: 2.5em;
+	background-color: #fefefe;
+}
+header h2, header p{
+	float: left;
+}
+header h2{
+	margin-left: 1em;
+	margin-right: 0.5em;
+	opacity: 0.75;
+}
+header h2::first-letter{
+	font-size: 50px;
+}
+header p#I{
+	opacity: 0.3;
+	font-size: 31px;
+}
+header p#PSD{
+	padding-top: 1em;
+	padding-left: 0.5em;
+	opacity: 0.5;
+}
+form{
+	float: right;
+	margin: 1.5em 2em 0em 0em;
+}
+#search{
+	background-color: black;
+	border-radius: 5px 0px 0px 5px;
+	border: none;
+	margin: 0px;
+	padding: 0.7em;
+	color: white;
+	font-family: "Roboto", serif;
+	opacity: 0.9;
+}
+#submit{
+	background-color: #2aa2d4;
+	color: white;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	padding: 0.7em;
+	margin: 0px 0px 0px -4px;
+	font-family: "Roboto", serif;
+	cursor: pointer;
+}
+
+#HOME{
+	margin: 2.5em 0em 0em 0em;
+	padding: 0.5em 0em;
+	float: left;
+	width: 100%;
+	background-color: #2a2a2a;
+	box-shadow: 0px 0.5em #313131;
+}
+#HOME table{
+	padding-left: 1em;
+}
+#HOME table tr td{
+	border-bottom: none;
+	padding: 0.25em 1em;
+	border-left: 1px solid #999999;
+}
+#HOME table tr td a{
+	text-align: center;
+	text-decoration: none;
+	color: #999999;
+}
+#HOME table tr a:hover{
+	color: white;
+}
+
+#message{
+	margin: 0.5em 0em;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+#message div{
+	width: 50%;
+	margin: 1em 25%;
+	padding: 0.25em;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+
+	-webkit-animation-name: message;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+
+	animation-name: message;
+	animation-duration: 5s;
+	animation-delay: 5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+@keyframes message{
+	from{background-color: white;}
+	to{background-color: #1bd10e;}
+
+}
+#message div h1, #message div h3{
+	margin: 0.2em;
+}
+#mail{
+	position: relative;
+	left: 15%;
+	padding-top: 2%;
+
+	-webkit-animation-name: mailclosed;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+
+	animation-name: mailclosed;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+@keyframes mailclosed{
+	from {left: 15%;}
+	to {left: 75%;}
+}
+#animations{
+	width: 100%;
+	float: left;
+	margin-top: 1em;
+}
+#mailbox{
+	position: absolute;
+	left: 72%;
+}
+#mailbox:hover{
+	transform: scale(1.5, 1.5);
+}
+.button{
+	float: left;
+	margin: 2em 0em;
+	width: 100%;
+	text-align: center;
+}
+#goback{
+	color: white;
+	border: none;
+	padding: 0.2em 0em;
+	margin: 2em;
+}
+#goback a{
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #2aa2d4;
+	color: white;
+	border-radius: 5px;
+	padding: 1em;
+	font-size: 14px;
+	font-family: "Roboto", serif;
+}
+.feedback{
+	margin: 2em 0em 0em 0em;
+	float: left;
+	width: 100%;
+	background-color: #1c1c1c;
+	color: white;
+}
+.feedback div{
+	margin: 1em;
+}
+.feedback div h1 u{
+	text-decoration: underline;
+}
+.feedback form{
+	float: left;
+	margin: 0em;
+}
+#feedbackbutton{
+	position: relative;
+	background-color: #2aa2d4;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	padding: 1em;
+	margin: 1em 0em;
+}
+#feedbackbutton:hover{
+	cursor: pointer;
+}
+table tr td{
+	border-bottom: 1px dashed #555555;
+	padding: 1em 0em;
+}
+table h3{
+	font-style: ;
+}
+select{
+	background-color: #555555;
+	color: white;
+	border-radius: 5px;
+	width: 100px;
+	font-size: 18px;
+	border: none;
+}
+select:hover{
+	cursor: pointer;
+}
+table #other{
+	margin: 5px 0px;
+	padding: 5px;
+	background-color: #555555;
+	color: white;
+	border-radius: 3px;
+	width: 250px;
+	font-size: 16px;
+	border: none;
+}

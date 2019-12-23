@@ -13,13 +13,13 @@
 			<img src="images/t.png">
 			<img src="images/p.png">
 			<img src="images/g.png">
-			<img src="images/w.png">
+			<img src="images/w.png" class="wireless">
 		</div>
 		<div id="b">
-			<a href="#">Sign Up</a> |
-			<a href="#">Login</a> |
-			<a href="#">RSS Feeds</a> |
-			<a href="#">Archived News</a>
+			<a href="#" class="signup">Sign Up</a> |
+			<a href="#" class="login">Login</a> |
+			<a href="#" class="feeds">RSS Feeds</a> |
+			<a href="#" class="news">Archived News</a>
 		</div>
 	</nav>
 	<div id="plus">
@@ -38,7 +38,7 @@
 	<div>
 		<nav id="HOME">
 			<table>
-				<tr id="first">
+				<tr>
 					<td><a href="#">HOME</a></td>
 					<td><a href="#">STYLE DEMO</a></td>
 					<td><a href="#">FULL WIDTH</a></td>
@@ -68,9 +68,6 @@
 			<a class="prev">&#10094;</a>
 			<a class="next">&#10095;</a>
 			</div>
-			<br>
-
-			
 		</div>
 	</div>
 
@@ -207,9 +204,8 @@
 							<form action="contact.html" method="POST" id="form">
 								<input type="text" name="name" id="name" placeholder="Name" required>
 								<input type="email" name="email" id="email" placeholder="Email" required>
-								<input type="text" name="Message" id="message" placeholder="Message" required style="height: 50px;">
-								<textarea placeholder="Message"></textarea>
-								<input id="button" type="submit">
+								<input type="textarea" name="message" id="message" placeholder="Message">
+								<input id="button" type="submit" value="submit" style="text-transform: uppercase;">
 							</form>
 						</div>
 					</section>

@@ -26,6 +26,9 @@ body{
 	color: white;
 	text-decoration: none;
 }
+.wireless{
+	transform: rotate(60deg);
+}
 #plus{
 	margin: 0em 2em 0em 0em;
 	background-color: white;
@@ -270,20 +273,22 @@ footer section #contact form input{
 	background-color: #232323;
 	color: #555555;
 }
-textarea{
+#message{
 	margin: 0.5em 0em;
 	width: 100%;
-	padding: 0.5em;
+	height: 100px;
 	border-radius: 5px;
 	border:none;
 	background-color: #232323;
 	color: #555555;
-	height: 50px;
 }
 footer section #contact form #button{
 	border-radius: 5px;
+	width: 80px;
+	font-family: "Roboto", serif;
+	font-size: 16px;
 	border:none;
-	padding: 0.5em;
+	padding: 0.4em 0.2em;
 	background-color: #2aa2d4;
 	color: white;
 	cursor: pointer;
