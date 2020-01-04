@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Euonymus</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="services.js"></script>
+	<link rel="stylesheet" type="text/css" href="services.css">
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Services</h1>
+		</div>
+		<div class="datediv">
+			<ul>
+				<li class="date"></li>
+				<li class="day"></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<article>
+			<section class="colorsection">
+				<div>
+					<p class="colortext">Choose the background color</p>
+					<button class="translate" onclick="shqip()">Albanian</button>
+					<button class="translate" onclick="english()">English</button>
+				</div>
+				<div>
+					<ul class="colorlist">
+						<li><button onclick="color(0)">Red</button></li>
+						<li><button onclick="color(1)">Blue</button></li>
+						<li><button onclick="color(2)">Green</button></li>
+						<li><button onclick="color(3)">Yellow</button></li>
+						<li><button onclick="color(4)">Orange</button></li>
+						<li><button onclick="color(5)">White</button></li>
+						<li><button onclick="color(10)">Default</button></li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="calculatorsection">
+				<div class="calculatordiv">
+					<h1 style="margin: 0em;">Calculator</h1>
+					<div class="resultdiv" style=" height: 50px;">
+						<p class="result" style="font-size: 20px; font-weight: bold;"></p>
+						<p class="result1" style="font-size: 20px; font-weight: bold;"></p>
+					</div>
+					<div class="inputdiv">
+						<p>First value:<br><input type="value" class="first"></p>
+						<p>Second value:<br><input type="value" class="second"></p>
+					</div>
+					<div class="buttondiv">
+						<table>
+							<tr>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 0)">Add</button>
+								</td>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 1)">Subtract</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 2)">Multiply</button>
+								</td>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 3)">Divide</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 4)">Compare</button><br>
+								</td>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 5)">Hypotenuse</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, document.querySelector('.second').value, 6)">Percentage</button>
+								</td>
+								<td>
+									<button onclick="val(document.querySelector('.first').value, Math.PI, 7)"><abbr title="Only fill the first input" style="text-decoration: none;">Circle surface</abbr></button>
+								</td>
+							</tr>
+						</table>						
+					</div>
+				</div>
+
+				<div class="sliderdiv">
+					<h1 class="slider">Click to slide more content</h1>
+					<div class="shownumbers" style="display: none; padding: 1em;height: 300px; color: white">
+						<div style="width: 100%; height: 250px;">
+							<div class="five" style="width: 20px; float: right;"></div><br>
+							<div class="seven" style="left: 500px;"></div><br>
+						</div>
+						<button class="hidebutton">Hide</button>
+						<button class="movenumbers">Animate</button>
+					</div>
+				</div>
+			</section>
+			<section class="countriessection">
+				<h2 style="margin: 0em;">Countries details</h2>
+				<div id="Kosovo">
+					<ul class="Kosovo"></ul><br>
+					<ul class="kborders"><h3 style="margin-left: -1em;">Kosovo borders:</h3></ul>
+				</div>
+				<div id="Albania">
+					<ul class="Albania"></ul><br>
+					<ul class="aborders"><h3 style="margin-left: -1em;">Albania borders:</h3></ul>
+				</div>
+				<div>
+					<h3 style="margin-left: -1em;">Similar borders: </h3>
+					<p style="margin-left: -1em;">Through exec() and test() functions we'll check which countries do they both border with.</p>
+					<table class="similarborders" style="margin-left: -1em;">
+						<tr>
+							<td style="font-size: 18px; font-weight: bold;">#</td>
+							<td style="font-size: 18px; font-weight: bold;">Country</td>
+							<td style="font-size: 18px; font-weight: bold;">Similar</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div>
+			<p>For more information visit: <a href="https://www.wikipedia.com">wikipedia</a></p>
+		</div>
+	</footer>
+</body>
+</html>

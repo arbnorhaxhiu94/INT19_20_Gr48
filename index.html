@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Euonymus</title>
 	<link rel="stylesheet" type="text/css" href="index1.css">
-	<script type="text/javascript" src="contact.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 	<nav id="socialmedia">
@@ -50,11 +50,11 @@
 			</table>
 		</nav>
 		
-		<div class="slideshow-container">			
+		<div class="slideshow-container">		
 			<div class="mySlides">
-			    <img src="">
-			    <div class="text"><p><span style="font-size: 18px;">Caption Text</span>
-			    	<br><br> Vestibulu maccumsan ege stibulum eu justo con vallis aug ue estas aenea.
+			    <img id ="slideimg" src="images/rock.png">
+			    <div class="text" style="opacity: 0.8;"><p id="caption" style="font-size: 18px;">First image</p><p>
+			    	<br> Vestibulu maccumsan ege stibulum eu justo con vallis aug ue estas aenea.
 			    	<br> Vestibulu maccumsan ege stibulum eu justo con vallis aug ue estas aenea.</p></div>
 			    <div id="dots" style="text-align:center">
 					<span class="dot" ></span>
@@ -65,8 +65,8 @@
 				</div>
 			</div>
 
-			<a class="prev">&#10094;</a>
-			<a class="next">&#10095;</a>
+			<a class="prev" onclick="prev()">&#10094;</a>
+			<a class="next" onclick="next()">&#10095;</a>
 			</div>
 		</div>
 	</div>

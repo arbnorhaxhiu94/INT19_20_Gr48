@@ -4,13 +4,19 @@
 	<title>Euonymus</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="products.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="products.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Our Products</h1>
+		<audio controls loop style="float: right; padding: 0em; margin-top: -4em;">
+			<source src="Payphone.mp3" type="audio/mpeg">
+			<source src="Payphone.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 	</header>
-	<main>
+	<main style="margin: 0em 4em;">
 		<section class="welcome">
 			<p>Welcome to our store</p>
 		</section>
@@ -73,16 +79,37 @@
 				</figure>
 			</section>
 		</article>
-		<article class="article2">
-			<h1 style="background-color:orange;text-align:center;width: 80%;margin:0em 1em;padding:1em 0em;">Random Article</h1>
+		<article class="article3" style="margin: 0em 3em; ">
+			<section style="float: left; width: 250px;">
+				<h1>Add products to buy</h1>
+				<table class="shporta"></table>
+				<input type="text" class="inshporta">
+				<button class="shto">Add products</button>
+			</section>
+
+			<section style="float: left; width: 250px;">
+				<h1 class="showproducts">Click me to show more products</h1>
+				<div id="moreproducts" style="display: none;">
+					<ul>
+						<li>Jackets</li>
+						<li>Hats</li>
+						<li class="handband">Hand band</li>
+						<li>Head band</li>
+					</ul>
+					<button class="hideproducts">Hide this section</button>
+				</div>
+			</section>
+		</article>
+		<article class="article2" style="margin: 0em; float: left; margin: 3em;">
+			<h1 style="background-color:orange;text-align:center;width:85%;margin:0em;padding:1em 0em;">Random Article</h1>
 			<section>
 				<h2 style="margin: 0px; padding: 0px;">This is a description list:</h2>
 				<dl>
 					<dt>Description name</dt>
-					<dd>the description</dd>
+						<dd>the description</dd>
 					<dt>Description name</dt>
-					<dd>the description</dd>
-				</dl>
+						<dd>the description</dd>
+					</dl>
 			</section>
 			<section>
 				<p>This is a text on the left.<br><br>The image goes on the right.</p>
@@ -109,5 +136,10 @@
 			</section>
 		</article>
 	</main>
+	<footer>
+		<div>
+			<p>For more information email us to: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></p>
+		</div>
+	</footer>
 </body>
 </html>

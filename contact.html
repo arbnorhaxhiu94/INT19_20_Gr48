@@ -5,6 +5,21 @@
 	<title>Euonymus</title>
 	<link rel="stylesheet" type="text/css" href="contact.css">
 	<script type="text/javascript" src="contact.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			var input = document.getElementById('search');
+			var button = document.querySelector('#submit');
+			button.disabled = true;
+			input.onkeyup = function(){
+				if (input.length <= 0){
+					button.disabled = true;
+				}
+				else{
+					button.disabled = false;
+				}
+			}
+		});
+	</script>
 	<style>
 		body{
 			font-family: "Roboto", serif;
@@ -40,26 +55,27 @@
 		<h2>EUONYMUS</h2>
 		<p id="I">|</p>
 		<p id="PSD">Free PSD <br> Website Template</p></a>
-		<form action="#" method="GET">
+		<form action="https://www.google.com" method="GET">
 			<input type="text" id="search" placeholder="Search Our Website...">
-			<input type="submit" id="submit" value="SUBMIT">
+			<input type="submit" id="submit" value="SUBMIT" >
 		</form>
 	</header>
 
 	<nav id="HOME">
-			<table>
-				<tr>
-					<td><a href="index.html">HOME</a></td>
-					<td><a href="#">STYLE DEMO</a></td>
-					<td><a href="#">FULL WIDTH</a></td>
-					<td><a href="#">DROPDOWN</a></td>
-					<td><a href="#">PORTOFOLIO</a></td>
-					<td><a href="#">GALLERY</a></td>
-					<td><a href="#">LONG TEXT LINK</a></td>
-				</tr>
-			</table>
-		</nav>
-		
+		<table>
+			<tr>
+				<td><a href="index.html">HOME</a></td>
+				<td><a href="#">STYLE DEMO</a></td>
+				<td><a href="#">FULL WIDTH</a></td>
+				<td><a href="#">DROPDOWN</a></td>
+				<td><a href="#">PORTOFOLIO</a></td>
+				<td><a href="#">GALLERY</a></td>
+				<td><a href="#">LONG TEXT LINK</a></td>
+			</tr>
+		</table>
+	</nav>
+
+	<article>
 	<section id="message">
 		<div>
 			<h1>Your message has been sent.</h1>
@@ -68,15 +84,17 @@
 	</section>
 	<section id="animations">
 		<img src="images/mailclosed.png" width="40px" height="40px" id="mail">
+		<p id="demo" style="position: absolute; left: 200px;"></p>
 		<img src="images/mailbox.jpg" width="80px" height="80px" id="mailbox">
 	</section>
 	<div class="button">
 		<button id="goback"><a href="index.html">Go back</a></button>
 	</div>
-
+	</article>
+	<article>
 	<section class="feedback">
-		<div>
-			<h1>Or spare a minute to give <u>feedback</u> ...</h1><hr style="border: 1px solid #555555;">
+		<h1  style="margin:1em;">Or spare a minute to give <u>feedback</u> ...</h1><hr style="border:1px solid#555555;margin:1em;">
+		<div>		
 			<form>
 				<table>
 					<tr>
@@ -95,8 +113,8 @@
 					<tr>
 						<td>
 							<h3>Where do you live ?</h3>
-							<select>
-								<option></option>
+							<input list="cities" name="city" style="background-color: #555555; border:none; border-radius: 2px;">
+							<datalist id="cities">
 								<option>Prishtinë</option>
 								<option>Gjilan</option>
 								<option>Ferizaj</option>
@@ -104,7 +122,7 @@
 								<option>Gjakovë</option>
 								<option>Pejë</option>
 								<option>Mitrovicë</option>
-							</select>
+							</datalist>
 						</td>
 					</tr>
 					<tr>
@@ -149,9 +167,42 @@
 						</td>
 					</tr>
 				</table>
-				<button id="feedbackbutton">Send feedback</button>
+				<button id="feedbackbutton" onclick="message()">Send feedback</button>
+				<script>
+					function message(){
+						alert('Thank you for your feedback');
+					}
+				</script>
 			</form>
 		</div>
+		<div>
+			<img id="hello" src="images/smallhello.jpg" alt="Hello" width="50px" height="50px;" style="display: none;">
+			<canvas id="canvas" width="400px" height="200px">
+			</canvas>
+			<canvas id="canvas1" width="400px" height="200px">
+			</canvas>
+		</div>
+		<div>
+			<svg width="470px" height="200px" style="border: none; margin: 1em;">
+				<text x="60" y="15" fill="lightblue">This is a rectangle made with SVG</text>
+				<rect width="150px" height="150px" x="100" y="50" style="stroke: darkblue; stroke-width: 3; fill: #2aa2d4;">
+				
+			</svg>
+			<svg width="470px" height="200px" style="border: none; margin: 1em;">
+				<text x="60" y="15" fill="lightblue">This is a circle made with SVG</text>
+				<circle cx="170" cy="120" r="80" style="stroke: darkblue; stroke-width: 3; fill: #2aa2d4;">
+				
+			</svg>
+		</div>
 	</section>
-</div>
+	</article>
+	<footer style="width: 100%; float: left;">
+		<section id="copyrights">
+			<hr class="hrcopyrights" style="border: 0.75px solid #090909; box-shadow: 0px 0.5px #555555;">
+			<div id="cr1">
+				<p>Copyright &copy 2013 Domain Name - All Rights Reserved</p>
+			</div>
+			<div id="cr2"></div>
+		</section>
+	</footer>
 </body>

@@ -1,0 +1,126 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	margin: 0em;
+	padding: 0.1em;
+	background-color: orange;
+}
+header div{
+	margin-top: -4em;
+	padding: 0px;
+	float: right;
+}
+@font-face {
+    font-family: "Cotillion";
+    src: url("cotillio-webfont.woff");
+}
+    
+#aboutus {
+ font-family: "Cotillion" ;
+}
+header div ul{
+	display: inline-flex;
+}
+header div ul li{
+	list-style: none;
+	margin: 0em 0.5em;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+}
+ul li a:hover{
+	color: green;
+}
+main{
+	margin: 0em 7em;
+}
+.lastp{
+	column-count: 4;
+	column-gap: 20px;
+	column-rule: 1px solid orange;
+
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	-webkit-column-rule: 1px solid orange;
+}
+#registersec{
+	background-color: orange;
+	padding: 1em;
+	height: 300px;
+	border: 1em solid transparent;
+	border-image-repeat: repeat;
+	border-image: url(images/coin.jpg) round;
+}
+#registersec div{
+	float: left;
+	margin: 1em;
+}
+#registersec p{
+	font-size: 20px;
+	font-weight: bold;
+}
+.formdiv{
+	box-sizing: content-box;
+	width: 300px;
+	padding: 1em;
+	border: 2px dashed blue;
+	outline: 5px dashed blue;
+  	outline-offset: 5px;
+}
+#register input{
+	width: 200px;
+	padding: 0.1em;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+}
+#htmlgame{
+	background-color: lightblue;
+	padding: 1em;
+}
+#htmlgame button{
+	width: 50px;
+	height: 50px;
+	padding: 0.2em;
+	background-color: orange;
+	border: none;
+	border-radius: 50%;
+}
+
+#htmlgame button:hover{
+	background-color: green;
+	cursor: pointer;
+}
+canvas{
+	border: 5px solid black;
+	box-shadow: 5px 5px 3px darkblue;
+	margin: 0em 1em;
+}
+#dragdrop{
+	background-color: orange;
+	height: 200px;
+	margin: 0em;
+}
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+#div2{
+	margin-left: 200px;
+}
+footer{
+	width: 100%;
+	padding: 0em;
+	float: left;
+	margin: 0em;
+	background-color: darkblue;
+	color: white;
+}

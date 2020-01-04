@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="transportation.js"></script>
+	<link rel="stylesheet" type="text/css" href="transportation.css">
+	<title>EUONYMUS</title>
+</head>
+<body onload="startGame()">
+	<header>
+		<h1 id="aboutus" style="margin-left: 3.5em;">About us</h1>
+		<div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="transportation.html">Transportation</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<article>
+			<section>
+				<h1>We are ...</h1>
+				<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+				“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+				The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+
+				The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+			</section>
+			<section>
+				<h1>Our achievements</h1>
+				<p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+			</section>
+			<section>
+				<h1>Our future goals</h1>
+				<p class="lastp">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+			</section>
+		</article>
+
+		<article>
+			<img src="images/garage.jpg" style="display: none;" id="secondimg">
+			<img src="images/car.png" style="display: none;" id="firstimg">
+			<section id="registersec">
+				<h1>One of our goals is to make the delivery for free ...</h1>
+				<p>Register for free to get notifications.</p>
+				<div class="formdiv">
+					<form action="#" id="register" autocomplete="off">
+						<table>
+							<tr><td>Username:<td><input type="text" name="name" placeholder="Username" required></td></td></tr>
+							<tr><td>Email:<td><input type="email"name="email"placeholder="example@email.com"required></td></td></tr>
+							<tr><td>Password:<td><input type="password"name="password"placeholder="*********"required></td></td></tr>
+							<tr><td></td><td><input type="submit" name="submit" value="Register"style="cursor: pointer;"></td></tr>
+						</table>
+					</form>
+				</div>
+				<div style="float: right; margin-top: -1em;">
+					<video controls  height="200px" width="360px" style="margin-left: 2em; float: left;">
+						<source src="video2.mp4" type="video/mp4">
+						<source src="video2.ogg" type="video/ogg">
+						Video is not supported by your browser
+					</video>
+				</div>		
+			</section>
+			
+			<section id="htmlgame">
+				<h1 style="font-size: 25px; margin: 0em;">Park the car in the garage</h1>
+				<video controls autoplay loop  height="250px" width="300px" style="margin-left: 2em;">
+				   <source src="video1.mp4" type="video/mp4">
+				   <source src="video1.ogg" type="video/ogg">
+				   Video is not supported by your browser
+				</video>
+				<div style="text-align:center;width:480px;">
+					<h3>Controllers: </h3>
+					<button onmousedown="moveup()" onmouseup="clearmove()" >UP</button><br>
+					<button onmousedown="moveleft()" onmouseup="clearmove()" style="margin-right: 1em;">LEFT</button>
+					<button onmousedown="moveright()" onmouseup="clearmove()" style="margin-left: 1em;">RIGHT</button><br>
+					<button onmousedown="movedown()" onmouseup="clearmove()" >DOWN</button>
+				</div>
+			</section>
+
+			<section id="dragdrop">
+				<h1>Put a coin in the box to save money</h1>
+				<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  					<img src="images/coin.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="80" height="80">
+				</div>
+				<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">BOX</div>
+				<div style="float: right;">
+					<p >Listen: Payphone- Maroon 5</p>
+					​<audio controls loop>
+						<source src="Payphone.mp3" type="audio/mpeg">
+						<source src="Payphone.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>	
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div>
+			<p style="margin: 1em 7em; float: right;">Contact info: filanfisteku@something.com</p>
+		</div>
+	</footer>
+</body>
+</html>

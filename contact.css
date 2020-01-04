@@ -237,6 +237,8 @@ form{
 }
 .feedback div{
 	margin: 1em;
+	width: 40%;
+	float: left;
 }
 .feedback div h1 u{
 	text-decoration: underline;
@@ -244,6 +246,11 @@ form{
 .feedback form{
 	float: left;
 	margin: 0em;
+	padding: 0em;
+}
+.feedback table{
+	margin: 0em;
+	padding: 0em;
 }
 #feedbackbutton{
 	position: relative;
@@ -284,4 +291,29 @@ table #other{
 	width: 250px;
 	font-size: 16px;
 	border: none;
+}
+
+#copyrights{
+	margin: 0em;
+	padding: 1em 0em;
+	width: 100%;
+	color: #555555;
+	background-color: #1c1c1c;
+}
+#copyrights div{
+	margin: 0em 1em;
+	width: 480px;
+}
+#copyrights #cr2{
+	float: right;
+}
+#copyrights #cr2 p{
+	float: right;
+	margin: 0px;
+}
+#copyrights #cr1 p{
+	margin: 0px;
+}
+hr.hrcopyrights{
+	border: 1px solid black;
 }
