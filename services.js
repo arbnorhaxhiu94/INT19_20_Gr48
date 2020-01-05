@@ -169,8 +169,7 @@ function Country(name, population, area){
 
 // Perdorimi i Date() funksionit
 var year = new Date().getFullYear();
-var month = new Date().getMonth();
-var day = new Date().getDay();
+var day = new Date().getDate();
 
 switch(new Date().getDay()){
 	case 1:
@@ -194,6 +193,46 @@ switch(new Date().getDay()){
 	default:
 		var weekday = "Sunday";
 		break;
+}
+
+switch(new Date().getMonth()){
+	case 0:
+		var month = "01";
+		break;
+	case 1:
+		var month = "02";
+		break;
+	case 2:
+		var month = "03";
+		break;
+	case 3:
+		var month = "04";
+		break;
+	case 4:
+		var month = "05";
+		break;
+	case 5:
+		var month = "06";
+		break;
+	case 6:
+		var month = "07";
+		break;
+	case 7:
+		var month = "08";
+		break;
+	case 8:
+		var month = "09";
+		break;
+	case 9:
+		var month = "10";
+		break;
+	case 10:
+		var month = "11";
+		break;
+	case 11:
+		var month = "12";
+		break;
+
 }
 
 //ngarkimi i DOM permbajtjes_________________________________________________________________________________________
