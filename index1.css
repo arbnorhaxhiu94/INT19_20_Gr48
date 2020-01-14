@@ -273,6 +273,18 @@ footer section #contact form input{
 	background-color: #232323;
 	color: #555555;
 }
+footer section #contact form textarea{
+	margin: 0.5em 0em;
+	width: 98%;
+	padding: 0.5em;
+	border-radius: 5px;
+	border:none;
+	background-color: #232323;
+	color: #555555;
+	font-family: "Roboto", serif;
+	font-size: 16px;
+	resize: none;
+}
 #message{
 	margin: 0.5em 0em;
 	width: 100%;
@@ -312,9 +324,7 @@ footer section #contact form #button{
 #copyrights #cr1 p{
 	margin: 0px;
 }
-hr.hrcopyrights{
-	border: 1px solid #;
-}
+
 
 .slideshow-container {
   max-width: 75.5%;
